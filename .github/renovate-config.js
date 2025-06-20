@@ -4,5 +4,5 @@ module.exports = {
     onboarding: true,
     platform: 'github',
     forkProcessing: 'enabled',
-    repositories: ['nicolasbender/java']
+    repositories: ['nicolasbender/java', 'nicolasbender/renovate-config'],
 }
