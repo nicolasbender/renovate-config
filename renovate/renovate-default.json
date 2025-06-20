@@ -1,0 +1,6 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "prBodyNotes": [
+      "<!-- {\"depName\":\"{{depName}}\",\"currentVersion\":\"{{#unless (containsString currentVersion 'v')}}v{{/unless}}{{currentVersion}}\",\"newVersion\":\"{{prettyNewVersion}}\"} It worked! -->"
+    ]
+}
