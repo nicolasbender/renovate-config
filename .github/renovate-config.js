@@ -1,7 +1,7 @@
 module.exports = {
     username: 'renovate-release',
-    gitAuthor: 'Renovate Bot <bot@renovateapp.com>',
-    onboarding: true,
+    gitAuthor: 'Nicolas Bender <nicolas.bender@sap.com>',
+    onboarding: false,
     platform: 'github',
     forkProcessing: 'enabled',
     repositories: ['nicolasbender/java', 'nicolasbender/renovate-config'],
