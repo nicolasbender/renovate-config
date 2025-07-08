@@ -1,5 +1,5 @@
 module.exports = {
-    username: 'renovate-release',
+    username: 'nicolasbender',
     gitAuthor: 'Nicolas Bender <nicolas.bender@sap.com>',
     onboarding: false,
     platform: 'github',
