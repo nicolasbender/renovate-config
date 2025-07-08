@@ -8,6 +8,10 @@
       "gomodUpdateImportPaths",
       "gomodTidy"
     ],
+    "labels": [
+        "type/dependency-upgrade",
+        "go"
+    ],
     "packageRules": [
         {
             "matchManagers": [
@@ -16,9 +20,41 @@
             "matchDepNames": [
                 "go"
             ],
+            "addLabels": [
+                "semver/patch"
+            ],
             "matchUpdateTypes": [
-                "minor",
                 "patch"
+            ],
+            "enabled": true
+        },
+        {
+            "matchManagers": [
+                "gomod"
+            ],
+            "matchDepNames": [
+                "go"
+            ],
+            "addLabels": [
+                "semver/minor"
+            ],
+            "matchUpdateTypes": [
+                "minor"
+            ],
+            "enabled": true
+        },
+        {
+            "matchManagers": [
+                "gomod"
+            ],
+            "matchDepNames": [
+                "go"
+            ],
+            "addLabels": [
+                "semver/major"
+            ],
+            "matchUpdateTypes": [
+                "major"
             ],
             "enabled": true
         }

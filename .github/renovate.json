@@ -1,16 +1,14 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        ":gomod",
         "github>nicolasbender/renovate-config//renovate/renovate-tooling"
-    ],
-    "postUpdateOptions": [
-      "gomodUpdateImportPaths",
-      "gomodTidy"
     ],
     "packageRules": [
         {
             "matchManagers": [
+                "github-actions"
+            ],
+            "addLabels": [
                 "github-actions"
             ],
             "enabled": true
